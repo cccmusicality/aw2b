@@ -1,0 +1,107 @@
+<% provide(:home, "active") %>
+<% provide(:title, "Home") %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+
+  <body>
+<%#-------------------------------------------------Facebook button group-----------%>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=412994489042277";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=412994489042277";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<%#-------------------------------------------------Facebook button group-----------%>
+
+<!-- Main jumbotron for a primary marketing message or call to action 
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Wm2b Music</h1>
+        <p>Featuring New Colorado Music</p>
+        
+      </div>
+    </div>
+Main jumbotron for a primary marketing message or call to action -->
+
+<div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+<!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="slide1"></div>
+        </div>
+        <div class="item">
+            <div class="slide2"></div>
+        </div>
+        <div class="item">
+            <div class="slide3"></div>
+        </div>
+    </div><!-- .carousel-inner --> 
+    <div class="container carousel-overlay party text-left">
+        
+   
+      <h1>Wm2b Music</h1>
+        <h3>Featuring New Colorado Music</h3>
+        </p>
+      </div>
+    </div>
+    </div>
+
+</div><!-- .carousel --> 
+<!--end bg-carousel-->
+ <!-- Core JavaScript -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+<%#---------------------------------------------------------------Button Container---------%>
+    <div class="container">
+
+      <div class="fb-login-button" data-max-rows="1" data-size="small" data-show-faces="true" data-auto-logout-link="false"></div>
+
+    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+<hr>
+      <!-- Example row of columns -->
+      <div class="row">
+          <div class="col-sm-4">
+          <h2>Listen   <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span></h2>
+          <p>The goods.</p>
+          <p>Here you can listen to songs from some great acts.  There is a little something for everybody.</p>
+          <p><a class="btn btn-default" href="about" role="button"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> &raquo; </a></p>
+       </div>
+
+
+         <div class="col-sm-4">
+          <h2>Artist   <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span></h2>
+          <p>Find out more about the artists and their music.</p>
+          <p><a class="btn btn-default" href="artist" role="button"><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> &raquo;</a></p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2>Blog    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></h2>
+          <p>Visit the Blog to find recent news and happenings.  Updated regularly.  </p>
+          <p><a class="btn btn-default" href="blog" role="button"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> &raquo;</a></h1>
+        </div>
+        </div>
+<%#---------------------------------------------------------------Button Container End---------%>
+  <hr>
+    <footer>
+        <small><p>&copy; 2017 Digital_Bath Developement</p></small>
+    </footer>
+    </div> <!-- /container -->
+
+</body>
+</html>

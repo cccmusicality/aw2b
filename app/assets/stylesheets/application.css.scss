@@ -1,0 +1,246 @@
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "utilities"; 
+
+@import "pages";
+$bgDefault      : #2b222f;
+$bgHighlight    : #8e44ad;
+$colDefault     : #6dc1d6;
+$colHighlight   : #ecdbff;
+$dropDown       : false;
+
+.navbar-left,{}
+.navbar-default {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus {
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        &:hover,  &:focus {
+          color: $colHighlight; }}
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $bgDefault;
+          > li {
+            > a {
+              color: $colDefault;
+              &:hover,  &:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}
+            > .divider {
+              background-color: $bgHighlight;}}}}}
+    @if $dropDown {
+      .open .dropdown-menu > .active {
+        > a, > a:hover, > a:focus {
+          color: $colHighlight;
+          background-color: $bgHighlight; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}
+.jumbotron {
+background-image: url(aGitBack.jpg);
+background-size: cover;
+}
+
+.jumbotron h1{
+    color: #fff;
+}
+
+.jumbotron p{
+    color: #fff;
+}
+.jumbotron h3{
+    color: #fff;
+}
+
+.other-color{
+    background: lightgrey
+  }
+
+
+
+
+
+.dd{
+background-image: url(Atest.jpg);
+background-size: cover;
+}
+.aa{
+background-image: url(sd1.jpg);
+background-size: cover;
+}
+.sd{
+background-image: url(sd2.jpg);
+background-size: cover;
+}
+.ga{
+background-image: url(ga1.jpg);
+background-size: cover;
+}
+.jw{
+background-image: url(jw1.jpg);
+background-size: cover;
+}
+.ru{
+background-image: url(ru1.jpg);
+background-size: cover;
+}
+.nm{
+background-image: url(nm1.jpg);
+background-size: cover;
+}
+.ae{
+background-image: url(ae1.jpg);
+background-size: cover;
+}
+.ccc{
+background-image: url(ccc1.jpg);
+background-size: cover;
+}
+
+.absolute {
+    position: absolute;
+    right: 20px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid #8AC007;
+} 
+
+
+
+
+
+
+
+
+
+
+
+.slide1, .slide2, .slide3 {
+    min-height: 200px;
+
+    background-size: cover;
+    background-position: center center;
+}
+.slide1 {
+    background-image: url(aGitBack.jpg);
+}
+.slide2 {
+    background-image: url(gb2.jpg);
+}
+.slide3 {
+    background-image: url(mc.jpg);
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+    opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.carousel-overlay {
+    position: absolute;
+    bottom: 050px;
+    right: 0;
+    left: 0;
+}
+
+
+
+.party {
+margin: 0 0 0 px;
+line-height: .74;
+font-weight: 900;
+font-size: 100px;
+color: #ffffff;
+
+}
+
+.party h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.party p{
+    color: #fff;
+}
+.party h3{
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.video-container { 
+   position: relative; /* keeps the aspect ratio */ 
+   padding-bottom: 56.25%; /* fine tunes the video positioning */ 
+   padding-top: 60px; overflow: hidden;
+}
+.jumbotron h4{
+  color: #fff
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
